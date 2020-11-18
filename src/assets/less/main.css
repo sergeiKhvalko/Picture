@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700i&subset=cyrillic');
 @font-face {
   font-family: 'Circe Light';
   src: url('../fonts/Circe-Light.eot');
@@ -26,6 +25,12 @@
   src: url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-ExtraBold.woff') format('woff'), url('../fonts/Circe-ExtraBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v21/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UXtXA_A.ttf) format('truetype');
 }
 * {
   box-sizing: border-box;
@@ -100,7 +105,7 @@ h4 {
 }
 .fixed-gift {
   position: fixed;
-  z-index: 19;
+  z-index: 10000;
   display: inline;
   top: 4rem;
   right: 2rem;
@@ -209,33 +214,27 @@ h4 {
   background-color: #f7e7e6;
   padding-top: 3rem;
   /* Making it beautiful */
-
 }
-.main .file_upload {
+.main .file_uplo {
   position: relative;
   overflow: hidden;
   font-size: 1em;
   /* example */
-
   height: 4em;
   /* example */
-
-  line-height: 2em /* the same as height */
-;
+  line-height: 2em /* the same as height */;
 }
-.main .file_upload > button {
+.main .file_uplo > button {
   float: right;
   width: 8em;
   /* example */
-
   height: 100%;
 }
-.main .file_upload > div {
+.main .file_uplo > div {
   padding-left: 1em;
   /* example */
-
 }
-.main .file_upload input[type=file] {
+.main .file_uplo input[type=file] {
   position: absolute;
   left: 0;
   top: 0;
@@ -244,14 +243,12 @@ h4 {
   transform: scale(20);
   letter-spacing: 10em;
   /* IE 9 fix */
-
   -ms-transform: scale(20);
   /* IE 9 fix */
-
   opacity: 0;
   cursor: pointer;
 }
-.main .file_upload > button {
+.main .file_uplo > button {
   transition: background 0.2s;
   border-radius: 50px;
   overflow: hidden;
@@ -263,7 +260,7 @@ h4 {
   border: 2px solid #c51abb;
   padding: 1.5rem;
 }
-.main .file_upload > button:before {
+.main .file_uplo > button:before {
   content: '';
   background: url("../img/camera.svg") no-repeat center;
   width: 1.6rem;
@@ -491,7 +488,6 @@ h4 {
 .calc {
   padding: 8rem 0 4rem 0;
   /* Making it beautiful */
-
 }
 .calc h2,
 .calc .p-heading {
@@ -551,23 +547,18 @@ h4 {
   overflow: hidden;
   font-size: 1em;
   /* example */
-
   height: 4em;
   /* example */
-
-  line-height: 2em /* the same as height */
-;
+  line-height: 2em /* the same as height */;
 }
 .calc .file_upload > button {
   float: right;
   width: 8em;
   /* example */
-
   height: 100%;
 }
 .calc .file_upload > div {
-  padding-left: 1em /* example */
-;
+  padding-left: 1em /* example */;
 }
 .calc .file_upload input[type=file] {
   position: absolute;
@@ -578,10 +569,8 @@ h4 {
   transform: scale(20);
   letter-spacing: 10em;
   /* IE 9 fix */
-
   -ms-transform: scale(20);
   /* IE 9 fix */
-
   opacity: 0;
   cursor: pointer;
 }
@@ -847,7 +836,7 @@ h4 {
   position: absolute;
   bottom: -3rem;
   left: 15rem;
-  z-index: 19;
+  z-index: 1000000;
 }
 .feedback-block .button-order:before {
   content: '';
@@ -897,13 +886,12 @@ h4 {
   cursor: pointer;
   text-align: center;
   margin-bottom: 4rem;
-  margin-top: 2rem;
 }
 .often-questions .accordion-heading span {
   border-bottom: 2px dotted #333;
 }
 .often-questions .accordion-block {
-  margin-top: 1rem;
+  margin-top: 6rem;
   background-color: #f7e7e6;
   padding: 3rem 4rem;
 }
@@ -1137,36 +1125,30 @@ h4 {
   height: 100%;
   background-color: rgba(178, 80, 188, 0.8);
   /* Making it beautiful */
-
 }
 .popup-design input[name="name"] {
   margin-top: 2rem;
 }
-.popup-design .file_upload {
+.popup-design .file_uploa {
   position: relative;
   overflow: hidden;
   font-size: 1em;
   /* example */
-
   height: 4em;
   /* example */
-
-  line-height: 2em /* the same as height */
-;
+  line-height: 2em /* the same as height */;
 }
-.popup-design .file_upload > button {
+.popup-design .file_uploa > button {
   float: right;
   width: 8em;
   /* example */
-
   height: 100%;
 }
-.popup-design .file_upload > div {
+.popup-design .file_uploa > div {
   padding-left: 1em;
   /* example */
-
 }
-.popup-design .file_upload input[type=file] {
+.popup-design .file_uploa input[type=file] {
   position: absolute;
   left: 0;
   top: 0;
@@ -1175,14 +1157,12 @@ h4 {
   transform: scale(20);
   letter-spacing: 10em;
   /* IE 9 fix */
-
   -ms-transform: scale(20);
   /* IE 9 fix */
-
   opacity: 0;
   cursor: pointer;
 }
-.popup-design .file_upload > button {
+.popup-design .file_uploa > button {
   transition: background 0.2s;
   border-radius: 50px;
   overflow: hidden;
@@ -1194,7 +1174,7 @@ h4 {
   border: 2px dashed #c51abb;
   padding: 1.5rem;
 }
-.popup-design .file_upload > button:before {
+.popup-design .file_uploa > button:before {
   content: '';
   background: url("../img/camera.svg") no-repeat center;
   width: 1.6rem;
@@ -1258,9 +1238,6 @@ h4 {
   transform: translateX(-50%) !important;
   padding: 3rem 6rem 4rem 6rem;
 }
-.status {
-  text-align: center;
-}
 @media (max-width: 1399px) {
   .paints {
     display: none;
@@ -1271,16 +1248,16 @@ h4 {
   .calc .file_upload > button {
     width: 100%;
   }
-  .popup-design .file_upload > div {
+  .popup-design .file_uploa > div {
     display: none;
   }
-  .popup-design .file_upload > button {
+  .popup-design .file_uploa > button {
     width: 100%;
   }
-  .main .file_upload > div {
+  .main .file_uplo > div {
     display: none;
   }
-  .main .file_upload > button {
+  .main .file_uplo > button {
     width: 100%;
   }
 }
@@ -1446,7 +1423,7 @@ h4 {
     bottom: -2.9rem;
   }
   .card-3 .card-block .p-heading {
-    margin: 2.5rem 0  3.5rem 0;
+    margin: 2.5rem 0 3.5rem 0;
   }
   .card-3 .card-block-text {
     padding-top: 0;
