@@ -34,7 +34,7 @@ const forms = () => {
     inputs.forEach(item => {
       item.value = '';
     });
-    
+
     upload.forEach(item => {
       item.previousElementSibling.textContent = 'Файл не выбран';
     });
